@@ -1,0 +1,177 @@
+-- FINISHED, BUT NOT RECORDED
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Phantom Forces By Zu0a", "Ocean")
+
+-- main 
+            local Main = Window:NewTab("Main")
+        local MainSection = Main:NewSection("Combat Functions")
+                MainSection:NewButton("Blatant Head HBE", "ETC", function()
+                    Size = 8 -- Setting higher than 8 or so will screw with the server hit detection and prevent your guns from damaging people. 8 is still easy to "rage" with. I recommend 2-5 if you want to look legit.
+Transparency = 0.5 -- Leave it at 0.5 if you want the heads to be visible. Set to 1 to make them invisible.
+
+game:GetService("RunService").Stepped:Connect(function()
+for i,v in next, workspace.Players:GetDescendants() do
+if v:FindFirstChild("Head") and not v:FindFirstChildWhichIsA("MeshPart") then
+sethiddenproperty(v.Head, "Massless", true)
+v.Head.CanCollide = false
+v.Head.Transparency = Transparency
+if v.Head.Size ~= Vector3.new(Size, Size, Size) and v.Head.Mesh.Scale ~= Vector3.new(Size, Size, Size) then
+v.Head.Size = Vector3.new(Size, Size, Size)
+v.Head.Mesh.Scale = Vector3.new(Size, Size, Size)
+end
+if v.Head.Parent.Parent.Name == "Bright blue" then
+v.Head.BrickColor = BrickColor.new("Bright blue")
+end
+if v.Head.Parent.Parent.Name == "Bright orange" then
+v.Head.BrickColor = BrickColor.new("Bright orange")
+end
+end
+end
+end)
+
+while wait() do
+for i,v in next, workspace.Ignore.DeadBody:GetChildren() do
+v:Destroy()
+end
+end
+                end)
+            MainSection:NewButton("Legit Head HBE", "ETC", function()
+                Size = 4 -- Setting higher than 8 or so will screw with the server hit detection and prevent your guns from damaging people. 8 is still easy to "rage" with. I recommend 2-5 if you want to look legit.
+Transparency = 0.5 -- Leave it at 0.5 if you want the heads to be visible. Set to 1 to make them invisible.
+
+game:GetService("RunService").Stepped:Connect(function()
+for i,v in next, workspace.Players:GetDescendants() do
+if v:FindFirstChild("Head") and not v:FindFirstChildWhichIsA("MeshPart") then
+sethiddenproperty(v.Head, "Massless", true)
+v.Head.CanCollide = false
+v.Head.Transparency = Transparency
+if v.Head.Size ~= Vector3.new(Size, Size, Size) and v.Head.Mesh.Scale ~= Vector3.new(Size, Size, Size) then
+v.Head.Size = Vector3.new(Size, Size, Size)
+v.Head.Mesh.Scale = Vector3.new(Size, Size, Size)
+end
+if v.Head.Parent.Parent.Name == "Bright blue" then
+v.Head.BrickColor = BrickColor.new("Bright blue")
+end
+if v.Head.Parent.Parent.Name == "Bright orange" then
+v.Head.BrickColor = BrickColor.new("Bright orange")
+end
+end
+end
+end)
+
+while wait() do
+for i,v in next, workspace.Ignore.DeadBody:GetChildren() do
+v:Destroy()
+end
+end
+end)
+            MainSection:NewButton("Blatant Body HBE", "ETC", function()
+                Size = 8 -- Setting higher than 8 or so will screw with the server hit detection and prevent your guns from damaging people. 8 is still easy to "rage" with. I recommend 2-5 if you want to look legit.
+Transparency = 0.5 -- Leave it at 0.5 if you want the torsos/left legs to be visible. Set to 1 to make them invisible.
+
+game:GetService("RunService").Stepped:Connect(function()
+for i,v in next, workspace.Players:GetDescendants() do
+if v:FindFirstChild("Left Leg") and not v:FindFirstChildWhichIsA("MeshPart") then
+sethiddenproperty(v["Left Leg"], "Massless", true)
+v["Left Leg"].CanCollide = false
+v["Left Leg"].Transparency = Transparency
+if v["Left Leg"].Size ~= Vector3.new(Size, Size, Size) and v["Left Leg"].Mesh.Scale ~= Vector3.new(Size, Size, Size) then
+v["Left Leg"].Size = Vector3.new(Size, Size, Size)
+v["Left Leg"].Mesh.Scale = Vector3.new(Size, Size, Size)
+end
+if v["Left Leg"].Parent.Parent.Name == "Bright blue" then
+v["Left Leg"].BrickColor = BrickColor.new("Bright blue")
+end
+if v["Left Leg"].Parent.Parent.Name == "Bright orange" then
+v["Left Leg"].BrickColor = BrickColor.new("Bright orange")
+end
+end
+end
+end)
+
+while wait() do
+for i,v in next, workspace.Ignore.DeadBody:GetChildren() do
+v:Destroy()
+end
+end
+            end)
+    MainSection:NewButton("Legit Body HBE", "ETC", function()
+                        Size = 5 -- Setting higher than 8 or so will screw with the server hit detection and prevent your guns from damaging people. 8 is still easy to "rage" with. I recommend 2-5 if you want to look legit.
+Transparency = 0.5 -- Leave it at 0.5 if you want the torsos/left legs to be visible. Set to 1 to make them invisible.
+
+game:GetService("RunService").Stepped:Connect(function()
+for i,v in next, workspace.Players:GetDescendants() do
+if v:FindFirstChild("Left Leg") and not v:FindFirstChildWhichIsA("MeshPart") then
+sethiddenproperty(v["Left Leg"], "Massless", true)
+v["Left Leg"].CanCollide = false
+v["Left Leg"].Transparency = Transparency
+if v["Left Leg"].Size ~= Vector3.new(Size, Size, Size) and v["Left Leg"].Mesh.Scale ~= Vector3.new(Size, Size, Size) then
+v["Left Leg"].Size = Vector3.new(Size, Size, Size)
+v["Left Leg"].Mesh.Scale = Vector3.new(Size, Size, Size)
+end
+if v["Left Leg"].Parent.Parent.Name == "Bright blue" then
+v["Left Leg"].BrickColor = BrickColor.new("Bright blue")
+end
+if v["Left Leg"].Parent.Parent.Name == "Bright orange" then
+v["Left Leg"].BrickColor = BrickColor.new("Bright orange")
+end
+end
+end
+end)
+
+while wait() do
+for i,v in next, workspace.Ignore.DeadBody:GetChildren() do
+v:Destroy()
+end
+end
+    end)
+            local MainSection = Main:NewSection("Other Functions")
+                            MainSection:NewButton("Player ESP", "ETC", function()
+                    loadstring(game:HttpGet("https://raw.githubusercontent.com/Zu0aX/ESP/main/Zu0asESP"))()
+                            end)
+                MainSection:NewButton("Player Chams", "ETC", function()
+                    loadstring(game:HttpGet("https://raw.githubusercontent.com/Zu0aX/PhantomForces/main/Chams"))();
+                    end)
+                MainSection:NewButton("Fullbright", "ETC", function()
+                    loadstring(game:HttpGet("https://raw.githubusercontent.com/Zu0aX/FullBright/main/FB"))()
+                    end)
+                MainSection:NewButton("Unlock Everything (Server Sided OP)", "ETC", function()
+                    loadstring(game:HttpGet("https://raw.githubusercontent.com/Zu0aX/PhantomForces/main/UnlockAll"))();
+                end)
+        local Main = Window:NewTab("Misc")
+        local MainSection = Main:NewSection("Misc")
+        MainSection:NewButton("Extra", "Misc", function()
+        end)
+local Main = Window:NewTab("Credits")
+        local ESPSection = Main:NewSection("-- Credits and Information --")
+ESPSection:NewLabel("Script Developer - Zu0a")
+ESPSection:NewLabel("Misc Helper - farterdude45")
+ESPSection:NewLabel("Questions/Recommendations DM Zu0a#8472")
+local Main = Window:NewTab("UPDATED - 9/25/22")
+        local ESSection = Main:NewSection("Added: Chams")
+        local ESSection = Main:NewSection("Added: Unlock ALL OP")
+local starterGui = game:GetService("StarterGui")
+starterGui:SetCore("SendNotification", {
+	Title = "Notification",
+	Text = "Zu0a's Phantom Forces GUI - LOADED",
+	Icon = "rbxassetid://10751883088",
+	Duration = 5
+})
+wait(1)
+local starterGui = game:GetService("StarterGui")
+wait()
+starterGui:SetCore("SendNotification", {
+	Title = "Notification",
+	Text = "Subscribe to Zu0a YT",
+	Icon = "rbxassetid://10751883088",
+	Duration = 5
+})
+local starterGui = game:GetService("StarterGui")
+wait(5)
+starterGui:SetCore("SendNotification", {
+	Title = "Notification",
+	Text = "farterdude45 is a NIGGER",
+	Icon = "rbxassetid://56784578",
+	Duration = 10
+})
